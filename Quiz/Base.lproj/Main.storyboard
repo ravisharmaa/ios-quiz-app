@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Quiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lhA-3p-HTR">
+                                <rect key="frame" x="175" y="76" width="25" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GxW-9J-I7N">
+                                <rect key="frame" x="175.5" y="323" width="25" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oiK-a2-QCX">
+                                <rect key="frame" x="141" y="386" width="93" height="30"/>
+                                <state key="normal" title="Show Answer"/>
+                                <connections>
+                                    <action selector="showAnswer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ahZ-Df-zta"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZJc-Cf-4bg">
+                                <rect key="frame" x="138.5" y="138" width="98" height="30"/>
+                                <state key="normal" title="Next Question"/>
+                                <connections>
+                                    <action selector="showNextQuestion:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lc9-PH-7sc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ZJc-Cf-4bg" firstAttribute="centerX" secondItem="lhA-3p-HTR" secondAttribute="centerX" id="3jF-KD-jrF"/>
+                            <constraint firstItem="GxW-9J-I7N" firstAttribute="top" secondItem="ZJc-Cf-4bg" secondAttribute="bottom" constant="155" id="PRg-YC-wOk"/>
+                            <constraint firstItem="ZJc-Cf-4bg" firstAttribute="top" secondItem="lhA-3p-HTR" secondAttribute="bottom" constant="41" id="fF0-Wr-0QB"/>
+                            <constraint firstItem="lhA-3p-HTR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fdc-hC-fLb"/>
+                            <constraint firstItem="oiK-a2-QCX" firstAttribute="centerX" secondItem="lhA-3p-HTR" secondAttribute="centerX" id="fuZ-DI-iHp"/>
+                            <constraint firstItem="oiK-a2-QCX" firstAttribute="top" secondItem="GxW-9J-I7N" secondAttribute="bottom" constant="42" id="oLP-g4-o0j"/>
+                            <constraint firstItem="lhA-3p-HTR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="56" id="poy-s7-xwh"/>
+                            <constraint firstItem="GxW-9J-I7N" firstAttribute="centerX" secondItem="lhA-3p-HTR" secondAttribute="centerX" id="rvl-bJ-s0C"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="answerLabel" destination="GxW-9J-I7N" id="vF7-8P-zES"/>
+                        <outlet property="questionLabel" destination="lhA-3p-HTR" id="NIy-ax-jiv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="407" y="74"/>
+        </scene>
+    </scenes>
+</document>
