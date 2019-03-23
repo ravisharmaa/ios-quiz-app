@@ -32,13 +32,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         questionLabel.text = questions[currentQuestionIndex]
     }
-//
-//    override func didReceiveMemoryWarning() {
-//        super.didReceiveMemoryWarning()
-//        // Dispose of any resources that can be recreated.
-//    }
 
-    
     @IBAction func showNextQuestion(_ sender: UIButton){
         
         currentQuestionIndex += 1

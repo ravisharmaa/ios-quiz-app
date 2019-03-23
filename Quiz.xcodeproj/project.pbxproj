@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2217FD3C2189469A00991E3F /* QuestionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2217FD3B2189469A00991E3F /* QuestionModel.swift */; };
 		225B9A431FD6FB8600B79BCE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225B9A421FD6FB8600B79BCE /* AppDelegate.swift */; };
 		225B9A451FD6FB8600B79BCE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225B9A441FD6FB8600B79BCE /* ViewController.swift */; };
 		225B9A481FD6FB8600B79BCE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 225B9A461FD6FB8600B79BCE /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2217FD3B2189469A00991E3F /* QuestionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionModel.swift; sourceTree = "<group>"; };
 		225B9A3F1FD6FB8600B79BCE /* Quiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		225B9A421FD6FB8600B79BCE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		225B9A441FD6FB8600B79BCE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 			children = (
 				225B9A421FD6FB8600B79BCE /* AppDelegate.swift */,
 				225B9A441FD6FB8600B79BCE /* ViewController.swift */,
+				2217FD3B2189469A00991E3F /* QuestionModel.swift */,
 				225B9A461FD6FB8600B79BCE /* Main.storyboard */,
 				225B9A491FD6FB8600B79BCE /* Assets.xcassets */,
 				225B9A4B1FD6FB8600B79BCE /* LaunchScreen.storyboard */,
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2217FD3C2189469A00991E3F /* QuestionModel.swift in Sources */,
 				225B9A451FD6FB8600B79BCE /* ViewController.swift in Sources */,
 				225B9A431FD6FB8600B79BCE /* AppDelegate.swift in Sources */,
 			);
